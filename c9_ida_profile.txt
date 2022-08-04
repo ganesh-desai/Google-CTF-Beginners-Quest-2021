@@ -1,0 +1,9 @@
+# open bzeimage.elf.i64
+
+# decompile/disassemble
+
+# refer sys_write
+
+# strcpy
+
+CTF{SB:575756}

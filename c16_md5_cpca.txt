@@ -1,0 +1,34 @@
+echo -n 'gctf' > pref
+New-Item pref
+
+powershell
+
+fastcoll_v1.0.0.5.exe -p pref
+
+>fastcoll_v1.0.0.5.exe -p pref
+MD5 collision generator v1.5
+by Marc Stevens (http://www.win.tue.nl/hashclash/)
+
+Using output filenames: 'msg1.bin' and 'msg2.bin'
+Using prefixfile: 'pref'
+Using initial value: 0123456789abcdeffedcba9876543210
+
+Generating first block: .....
+Generating second block: S01.....
+Running time: 3.838 s
+
+xxd -p msg1.bin >> msg
+xxd -p msg2.bin >> msg
+
+mdsum msg1.bin
+mdsum msg2.bin
+
+!hashme @ ctf-discord
+
+CTF{h4sh_m3_tw1c3_1245fd3}
+
+hashclash
+Marc's MSc project has been very successful. Marc defended his MSc thesis in June 2007, and passed with flying colors. His grade was 10, which is the highest possible grade, which is awarded only very rarely.
+Marc got a nomination for the Joop Bautz Award in the area of information security.
+On July 2, 2008 Marc received the "TU/e Afstudeerprijs 2008", i.e. the TU/e Best Master Thesis Award for the best final project in one of the TU/e master's programs completed in 2007.
+Marc's thesis "On Collisions for MD5", June 2007 (pdf, 652 KB) is available for download.
